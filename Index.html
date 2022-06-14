@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+            font-family: sans-serif;
+		}
+
+        body{
+            
+        }
+
+        .hero-header{
+            height: 450px;
+            background-image: url("./img/slide1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .unstex{
+            padding-top: 20px;
+            text-align: center;
+        }
+        .unsplash {
+            margin-left: 50px;
+            line-height: normal;
+            display: inline-block;
+            font-size: 108px;
+            font-weight: bold;
+            color: white;
+        }
+        .navicover{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #00000024;
+        }
+        .navibar{
+            margin-top: 10px;
+            margin-bottom: 10px;
+			height: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #ffffff;
+            
+		}
+
+        .navibar #logo{
+            line-height: 40px;
+        }
+
+        .navibar #logo img{
+            height: 40px;
+        }
+
+        .navibar #menu{
+			float: right;
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.navibar #menu li{
+			float: left;
+			margin-left: 30px;
+			line-height: 40px;
+		}
+
+        .navibar #menu li a{
+            color: #000000;
+            font-size: 13px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .categorycover{
+            display: block;
+        }
+
+        .category {
+    font-size: 16px;
+    color: #AAAAAA;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.c1{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c2{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c3{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c4{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c5{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c6{
+    margin-right: 50px;
+    cursor: pointer;
+}
+.c1:hover{
+    color: black;
+    border-bottom: 2px solid #000000
+}
+.c2:hover{
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+.c3:hover{
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+.c4:hover{
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+.c5:hover{
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+.c6:hover{
+    color: black;
+    border-bottom: 2px solid #000000;
+}
+
+
+        .search {
+            margin-top: 100px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            }
+
+            input {
+            width: 100%;
+            border: 1px solid rgba(187, 187, 187, 0.739);
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 14px;
+            }
+
+            .hhp{
+                color: #ffffff;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            .view-more {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            margin-left: 10%;
+            line-height: normal;
+            display: inline-block;
+            padding: 9px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: 4px solid white;
+            cursor: pointer;
+        }
+        .view-more:hover{
+            background-color: rgba(255, 255, 255, 0.258);
+            transition: 300ms;
+            
+        }
+
+        .iconcover {
+            display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 90%;
+}
+.icon2{
+    cursor: pointer;
+}
+
+.icon4{
+    cursor: pointer;
+}
+
+        .P-zone{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .Pic1{
+            padding-left: 5px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 33%;
+            position: relative;
+        }
+        .Pic2{
+            padding-right: 15px;
+            width: 33%;
+            position: relative;
+        }
+        .Pic3{
+            width: 33%;
+            position: relative;
+        }
+        .Pic1 :hover{
+            transform: scale(1.02);
+            transition: 300ms;
+        }
+        .Pic2 :hover{
+            transform: scale(1.02);
+            transition: 300ms;
+        }
+        .Pic3 :hover{
+            transform: scale(1.02);
+            transition: 300ms;
+        }
+        .Pic-indiv{
+            padding-bottom: 15px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navicover">
+    <div class="navibar">
+		<a href="#" id="logo">
+            <img src="./img/unslogo.png">
+		</a>
+        
+		<ul id="menu">
+			<li><a href="Login.html">Log in</a></li>
+			<li><a href="#">Sign up</a></li>
+		</ul>
+	</div>
+</div>
+<div class="categorycover">
+    <div class="category">
+
+        <h class="c1">Current Events</h>
+        <h class="c2">Wallpapers</h>
+        <h class="c3">3D Renders</h>
+        <h class="c4">Textures & Patterns</h>
+        <h class="c5">Architecture</h>
+        <h class="c6">Nature</h>
+    
+    </div>
+</div>
+    <div class="hero-header">
+        <div class="unstex">
+            <div class="unsplash">UNSPLASH</div> 
+        </div>
+        <div class="search">
+            <p class="hhp">The internet’s source of freely-usable images.<br>
+                Powered by creators everywhere.</p>
+            <input type="text" placeholder="Search Photo">
+        </div>
+
+        <div class="view-more">
+            <h class="h1">View more</h>
+        </div> 
+    </div>
+
+    <div class="iconcover">
+        <div class="icon2">
+            <img src="./img/2icon.png" width="50%">
+        </div>
+        <div class="icon4">
+            <img src="./img/4icon.png" width="50%">
+        </div>
+    </div>
+
+    <div class="P-zone">
+        <div class="Pic1">
+            <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide2.jpg" width="100%">
+            </a>
+            </div>
+            <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide5.jpg" width="100%">
+            </a>
+            </div>
+            <div class="Pic-indiv">
+                <a href="#" id="photo">
+                    <img src="./img/slide8.jpg" width="100%">
+                </a>
+                </div>
+                <div class="Pic-indiv">
+                    <a href="#" id="photo">
+                        <img src="./img/slide10.jpg" width="100%">
+                    </a>
+                    </div>
+        </div>
+        <div class="Pic2">
+            <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide3.jpg" width="100%">
+            </a>
+        </div>
+            <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide12.jpg" width="100%">
+            </a>
+        </div>
+        <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide9.jpg" width="100%">
+            </a>
+        </div>
+        <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide6.jpg" width="100%">
+            </a>
+        </div>
+        <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide13.jpg" width="100%">
+            </a>
+        </div>
+        </div>
+        <div class="Pic3">
+            <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide11.jpg" width="100%">
+            </a>
+        </div>
+        <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide7.jpg" width="100%">
+            </a>
+        </div>
+        <div class="Pic-indiv">
+            <a href="#" id="photo">
+                <img src="./img/slide14.jpg" width="100%">
+            </a>
+        </div>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
